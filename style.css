@@ -9,6 +9,9 @@ body {
     background-color: #fff;
     overflow: hidden
 }
+body * {
+    box-sizing: border-box;
+}
 main {
     display: flex;
     justify-content: center;
@@ -85,4 +88,20 @@ input {
 .result a {
     font-size: 5vh;
     color: #ce4040;
+}
+
+@media (max-width: 800px) {
+    .input {
+        width: 100vw;
+        flex-direction: column;
+        border-radius: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    input,
+    button {
+        font-size: 4vh;
+        width: 100vw;
+        padding: 1vh 2vh;
+    } 
 }

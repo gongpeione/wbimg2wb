@@ -5,7 +5,7 @@ const resultLink = document.querySelector('#result-link');
 const imgLinkRegex = /(\w+)\.\w+$/;
 
 btnFind.addEventListener('click', e => {
-    
+
     result.classList.remove('show');
     resultLink.href = '#';
 
@@ -33,6 +33,12 @@ btnFind.addEventListener('click', e => {
         console.log(`http://weibo.com/u/${decoded}`);
     }
     
+});
+
+imgLink.addEventListener('keyup', e => {
+    if (e.keyCode === 13) {
+        btnFind.click();
+    }
 });
 
 function toDec (number, originalRadix) {

@@ -91,6 +91,9 @@ input {
 }
 
 @media (max-width: 800px) {
+    body {
+        background: #f5f5f5;
+    }
     .input {
         width: 100vw;
         flex-direction: column;
